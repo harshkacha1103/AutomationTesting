@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "05f3da97-2f71-438c-92e0-7b9bd963ddcf",
+		"name": "Admin",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38155455"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\" : \"admin@gmail.com\",\r\n     \"password\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restapilive.onrender.com/alogin",
+							"protocol": "https",
+							"host": [
+								"restapilive",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"alogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\" : \"admin@gmail.com\",\r\n   \"password\" : \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restapilive.onrender.com/addcategory?admin-auth-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MjU4MDE4MjN9.OguidWwrffijXT69BDT95UZ7NtdCZJI3r16TmW0D7w8",
+							"protocol": "https",
+							"host": [
+								"restapilive",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"addcategory"
+							],
+							"query": [
+								{
+									"key": "admin-auth-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MjU4MDE4MjN9.OguidWwrffijXT69BDT95UZ7NtdCZJI3r16TmW0D7w8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "admin-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MjYyMTUyNzl9.tYby0twdRgA3vcFA_Hwv08YD_IqcJtdxiNkI9oxUCqY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catname\" : \"harsh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://restapilive.onrender.com/addcategory",
+							"protocol": "https",
+							"host": [
+								"restapilive",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"addcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "admin-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MjYyMTUyNzl9.tYby0twdRgA3vcFA_Hwv08YD_IqcJtdxiNkI9oxUCqY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://restapilive.onrender.com/deletecat",
+							"protocol": "https",
+							"host": [
+								"restapilive",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"deletecat"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
